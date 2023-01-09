@@ -1,0 +1,36 @@
+.nav {
+  background-color: #ecead3;
+  width: 100vw;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 2.3rem 0;
+}
+
+.logo-img {
+  width: 3.4rem;
+  height: 3.4rem;
+}
+
+.logo p {
+  color: #68742c;
+  padding-left: 0.8rem;
+  font-weight: 700;
+  font-size: 1.89rem;
+}
+
+@media (max-width: 768px) {
+		.logo {
+			margin: 0 14px;
+		}
+  .logo-img {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .logo p {
+  font-size: 1.6rem;
+  }
+}

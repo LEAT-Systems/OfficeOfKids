@@ -1,0 +1,107 @@
+.hero {
+  background-image: url("../../images//hero-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-display {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 5rem;
+}
+
+.hero-text {
+  padding: 12.9rem 0;
+  max-width: 52.6rem;
+}
+
+.hero-header {
+  font-weight: 700;
+  font-size: 2.6rem;
+  letter-spacing: -2%;
+}
+
+.text-display {
+  font-size: 1.4rem;
+  text-align: left;
+  margin-top: 1.6rem;
+}
+
+.read-more {
+  all: unset;
+  font-size: 1.4rem;
+  padding: 1.4rem 2.4rem;
+  background-color: #68742c;
+  border-radius: 60rem;
+  margin-top: 6.2rem;
+}
+
+.hero-video {
+  margin-top: 10.8rem;
+  margin-bottom: 12.17rem;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border: 16px solid #68742c;
+  border-radius: 50px;
+}
+
+.video-player{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 34.7px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-position: center;
+  }
+
+  .hero-display {
+    display: block;
+    padding: 157px 0;
+  }
+  .hero-text {
+    max-width: 52.6rem;
+    padding: 0;
+  }
+
+  .hero-header {
+    font-size: 1.6rem;
+    margin: 0 14px;
+  }
+
+  .text-display {
+    margin: 0 14px;
+    font-size: 1rem;
+    text-align: left;
+    margin-top: 1.6rem;
+  }
+
+  .read-more {
+    font-size: 14px;
+    padding: 8.8px 15.2px;
+    background-color: #68742c;
+    border-radius: 60rem;
+    margin: 32px 14px 0;
+  }
+
+  .hero-video {
+    border: 8px solid #68742c;
+    overflow-x: hidden;
+    padding: 0 18px 0;
+    margin-top: 62.2px;
+    border-radius:8px;
+    height: 226px;
+  }
+
+  .video-player{
+    border-radius: 0;
+  }
+
+}
