@@ -3,6 +3,7 @@ import {
   HiOutlineArrowLeftCircle,
   HiOutlineArrowRightCircle,
 } from "react-icons/hi2";
+import {SlBookOpen} from 'react-icons/sl'
 import image1 from "../images/images1.jpeg";
 import "../style/reader/ReaderScreen.css";
 
@@ -68,10 +69,10 @@ function ReaderScreen() {
                 <div className="navigate-page">
                   <p className="page">Page 1 of 30</p>
                   <div className="flex gap-x-[38px]">
-                    <div className="flex items-center">
+                    <div className="page-navigate">
                       <HiOutlineArrowLeftCircle className="mr-4" /> Previous
                     </div>
-                    <div className="flex items-center">
+                    <div className="page-navigate">
                       Next <HiOutlineArrowRightCircle className="ml-4" />
                     </div>
                   </div>
@@ -79,16 +80,66 @@ function ReaderScreen() {
               </div>
             </div>
 
-            <div>
-              <div className="user-background">
-                <div className="p-[24px]">
+            <div className="mt-[44px]">
+              <div className="author-background">
+                <div className=" author-display">
                   <p>Written by</p>
-                  <div className="flex">
+                  <div className="author-avatar">
                     <img src={item.image} alt="author" />
                     <p>{item.author}</p>
                   </div>
                 </div>
               </div>
+
+			  <div className="chapters">
+				  <p>Chapters</p>
+				  <p>Pages</p>
+			  </div>
+
+			  <ul>
+				  <li>
+					  <div className="flex items-center">
+						<SlBookOpen className="mr-4"/> Introduction
+					  </div>
+					  <p>Page 1</p>
+				  </li>
+				  <li>
+					  <div className="flex items-center">
+						<SlBookOpen className="mr-4"/> About author
+					  </div>
+					  <p>Page 2</p>
+				  </li>
+				  <li>
+					  <div className="flex items-center">
+						<SlBookOpen className="mr-4"/> Chapter 1
+					  </div>
+					  <p>Page 4</p>
+				  </li>
+				  <li>
+					  <div className="flex items-center">
+						<SlBookOpen className="mr-4"/> Chapter 2
+					  </div>
+					  <p>Page 10</p>
+				  </li>
+				  <li>
+					  <div className="flex items-center">
+						<SlBookOpen className="mr-4"/> Chapter 3
+					  </div>
+					  <p>Page 15</p>
+				  </li>
+				  <li>
+					  <div className="flex items-center">
+						<SlBookOpen className="mr-4"/> Chapter 4
+					  </div>
+					  <p>Page 23</p>
+				  </li>
+				  <li>
+					  <div className="flex items-center">
+						<SlBookOpen className="mr-4"/> Chapter 5
+					  </div>
+					  <p>Page 30</p>
+				  </li>
+			  </ul>
             </div>
           </div>
         ))}

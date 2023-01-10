@@ -16,18 +16,18 @@ function Footer() {
 							<p className='footer-text mt-2'>felicia.reid@example.com</p>
 							<p className='footer-text'>2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>
 							</div>
-						<ul className='flex gap-x-5 mt-[64px] md:mt-0'>
-							<li className='text-[14px] md:text-[18px]'>
+						<div className='flex gap-x-10 mt-[64px] md:mt-0'>
+							<div className='text-[14px] md:text-[18px]'>
 								<Link to='/private-policy'>
 									Privacy Policy
 								</Link>
-							</li>
-							<li className='text-[14px] md:text-[18px]'>
+							</div>
+							<div className='text-[14px] md:text-[18px]'>
 								<Link to='/tac'>
 									Terms and Condition
 								</Link>
-							</li>
-						</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
