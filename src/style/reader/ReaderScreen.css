@@ -59,7 +59,7 @@
   font-size: 1.6rem;
 }
 
-.chapters-list-mobile {
+.chapters-list-mobile, .author-background-mobile {
   display: none;
 }
 
@@ -124,6 +124,12 @@
   opacity: 1;
   background-color: #fbfbf6;
 }
+.chapters-list li:active {
+  outline: 2px solid #68742c;
+  color: #68742c;
+  opacity: 1;
+  background-color: #fbfbf6;
+}
 
 @media (max-width: 800px) {
   #reader-header {
@@ -165,25 +171,48 @@
     display: none;
   }
 
-  .chapters-list-mobile{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0 1.6rem;
-      overflow-x: scroll;
-        white-space: nowrap;
-        margin: 0 1.6rem;
+  .chapters-list-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 1.6rem;
+    overflow-x: scroll;
+    white-space: nowrap;
+    margin: 0 1.6rem 2.8rem ;
   }
 
-  .chapters-list-mobile::-webkit-scrollbar{
-      display: none;
+  .chapters-list-mobile::-webkit-scrollbar {
+    display: none;
   }
 
   .chapters-list-mobile li {
-      width: 8rem;
+    width: 8rem;
     border: 0.57px solid #00000080;
     border-radius: 2rem;
     padding: 0.45rem 0.9rem;
     color: rgba(0, 0, 0, 0.5);
+  }
+
+  .chapters-list-mobile li:first-child {
+    margin-left: 25rem;
+  }
+
+  .chapters-list-mobile li:hover {
+    background-color: #fbfbf6;
+    border: 0.57px solid #68742c;
+    border-radius: 2rem;
+  }
+  .chapters-list-mobile li:active {
+    background-color: #fbfbf6;
+    border: 0.57px solid #68742c;
+    border-radius: 2rem;
+  }
+
+  .author-background-mobile{
+      display: block;
+      background-image: url("../../images/UserBackground.svg");
+    background-size: cover;
+    border-radius: 2.4rem;
+    margin: 0 1.6rem 2.2rem;
   }
 }

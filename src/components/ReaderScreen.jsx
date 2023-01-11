@@ -70,7 +70,7 @@ function ReaderScreen() {
 
                   <div className="navigate-page">
                     <p className="page">Page 1 of 30</p>
-                    <div className="flex gap-x-[38px]">
+                    <div className=" flex gap-x-[20px] md:flex md:gap-x-[38px]">
                       <div className="page-navigate">
                         <HiOutlineArrowLeftCircle className="mr-2 md:mr-4" /> Previous
                       </div>
@@ -154,6 +154,16 @@ function ReaderScreen() {
                 </ul>
               </div>
             </div>
+
+			<div className="author-background-mobile">
+                  <div className=" author-display">
+                    <p>Written by</p>
+                    <div className="author-avatar">
+                      <img src={item.image} alt="author" />
+                      <p>{item.author}</p>
+                    </div>
+                  </div>
+                </div>
           </div>
         ))}
       </div>
