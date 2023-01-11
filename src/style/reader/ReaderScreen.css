@@ -1,163 +1,189 @@
-#reader-header{
-    color: #C0A427;
-    font-size: 2rem;
+#reader-header {
+  color: #c0a427;
+  font-size: 2rem;
 }
 
-#reader-header span{
-    color: black;
-    padding-left: 2.3rem;
+#reader-header span {
+  color: black;
+  padding-left: 2.3rem;
 }
 
-.reader-screen{
-    border-radius: 1.6rem;
-    background-color: #FBFBF6;
-    margin-top: 1.6rem;
-    margin-bottom: 5rem;
-    width: 100%;
-    color: black;
+.reader-screen {
+  border-radius: 1.6rem;
+  background-color: #fbfbf6;
+  margin-top: 1.6rem;
+  margin-bottom: 5rem;
+  width: 100%;
+  color: black;
 }
 
-.reader-page{
-    padding: 4.8rem 5.2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.reader-page {
+  padding: 4.8rem 5.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.reader-page h2{
-    text-align: center;
-    border: 1px solid black;
-    padding: .8rem 1.6rem;
-    border-radius: 3.6rem;
-    font-size: 1.6rem;
-    margin-bottom: 1.4rem;
+.reader-page h2 {
+  text-align: center;
+  border: 1px solid black;
+  padding: 0.8rem 1.6rem;
+  border-radius: 3.6rem;
+  font-size: 1.6rem;
+  margin-bottom: 1.4rem;
 }
 
-.reader-page p{
+.reader-page p {
+  font-size: 1.4rem;
+  padding: 0.8rem;
+  opacity: 0.6;
+}
+
+.navigate-page {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.9rem;
+  font-size: 1.6rem;
+}
+
+.page {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.page-navigate {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+.chapters-list-mobile {
+  display: none;
+}
+
+.author-background {
+  background-image: url("../../images/UserBackground.svg");
+  background-size: cover;
+  border-radius: 2.4rem;
+}
+
+.author-display {
+  padding: 2.4rem;
+}
+
+.author-display p {
+  opacity: 0.7;
+  font-size: 1.6rem;
+}
+
+.author-avatar {
+  display: flex;
+  align-items: center;
+  gap: 0 1.6rem;
+  margin-top: 0.8rem;
+}
+
+.author-avatar img {
+  width: 4.4rem;
+  height: 4.4rem;
+  border: 2px solid #c0a427;
+  border-radius: 50%;
+}
+
+.chapters {
+  width: 30vw;
+  padding: 2.4rem;
+  background-color: #c0a427;
+  margin-top: 1.6rem;
+  border-radius: 5.6rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8rem;
+}
+
+.chapters-list li {
+  list-style-type: none;
+  color: black;
+  opacity: 0.5;
+  margin-top: 1.6rem;
+  border-radius: 5.6rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 1.6rem 2.4rem;
+  cursor: pointer;
+  transition: outline 200ms, color 200ms ease;
+}
+
+.chapters-list li:hover {
+  outline: 2px solid #68742c;
+  color: #68742c;
+  opacity: 1;
+  background-color: #fbfbf6;
+}
+
+@media (max-width: 800px) {
+  #reader-header {
     font-size: 1.4rem;
-    padding: .8rem;
-    opacity: 0.6;
-}
+    margin: 0 1.6rem;
+  }
 
-.navigate-page{
-    display: flex;
-    justify-content: space-between;
-    padding: 2.9rem ;
-    font-size: 1.6rem;
-}
+  .reader-screen {
+    padding: 2.4rem 1.6rem 4.8rem;
+    overflow-x: hidden;
+    width: 95%;
+    margin: 0 auto;
+  }
 
-.page{
-    font-weight: 700;
-    font-size: 1.6rem;
-}
+  .reader-page {
+    padding: 2.4rem 0.8rem;
+  }
 
-.page-navigate{
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    font-size: 1.6rem;
-}
+  .reader-page h2 {
+    padding: 0.45rem 0.91rem;
+    font-size: 1.2rem;
+    margin-bottom: 1.6rem;
+  }
 
-.author-background{
-    background-image: url('../../images/UserBackground.svg');
-    background-size: cover;
-    border-radius: 2.4rem;
-}
+  .reader-page p {
+    font-size: 1.2rem;
+  }
 
-.author-display{
-    padding: 2.4rem;
-}
+  .navigate-page div {
+    font-size: 1.2rem;
+  }
+  .page {
+    font-size: 1.2rem;
+  }
 
-.author-display p{
-    opacity: 0.7;
-    font-size: 1.6rem;
-}
+  .author-background,
+  .chapters,
+  .chapters-list {
+    display: none;
+  }
 
-.author-avatar{
-    display: flex;
-    align-items: center;
-    gap: 0 1.6rem;
-    margin-top: .8rem;
-}
-
-.author-avatar img{
-    width: 4.4rem;
-    height: 4.4rem;
-    border: 2px solid #C0A427;
-    border-radius: 50%;
-}
-
-.chapters{
-    width: 30vw;
-    padding: 2.4rem;
-    background-color: #C0A427;
-    margin-top: 1.6rem;
-    border-radius: 5.6rem;
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.8rem;
-}
-
-ul li {
-    list-style-type: none;
-    color: black;
-    opacity: 0.5;
-    margin-top: 1.6rem;
-    border-radius: 5.6rem;
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.6rem;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    padding: 1.6rem 2.4rem;
-    cursor: pointer;
-    transition: outline 200ms, color 200ms ease;
-}
-
-ul li:hover{
-    outline: 2px solid #68742C;
-    color: #68742C;
-    opacity: 1;
-    background-color: #FBFBF6;
-}
-
-@media (max-width: 800px){
-    #reader-header{
-        font-size: 1.4rem;
+  .chapters-list-mobile{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0 1.6rem;
+      overflow-x: scroll;
+        white-space: nowrap;
         margin: 0 1.6rem;
-    }
+  }
 
-    
-    .reader-screen{
-        margin: 2.4rem 1.6rem 4.8rem ;
-        overflow-x: hidden;
-         width: 95%;
+  .chapters-list-mobile::-webkit-scrollbar{
+      display: none;
+  }
 
-    }
-
-    .reader-page{
-        padding: 2.4rem .8rem;
-    }
-    
-    .reader-page h2{
-        padding: .45rem .91rem;
-        font-size: 1.2rem;
-        margin-bottom: 1.6rem;
-    }
-
-    .reader-page p{
-        font-size: 1.2rem;
-
-    }
-
-    .navigate-page div{
-        font-size: 1.2rem;
-    }
-    .page{
-        font-size: 1.2rem;
-    }
-
-    .author-background, .chapters, .chapters-list{
-        display: none;
-    }
+  .chapters-list-mobile li {
+      width: 8rem;
+    border: 0.57px solid #00000080;
+    border-radius: 2rem;
+    padding: 0.45rem 0.9rem;
+    color: rgba(0, 0, 0, 0.5);
+  }
 }

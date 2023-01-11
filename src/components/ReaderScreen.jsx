@@ -72,10 +72,10 @@ function ReaderScreen() {
                     <p className="page">Page 1 of 30</p>
                     <div className="flex gap-x-[38px]">
                       <div className="page-navigate">
-                        <HiOutlineArrowLeftCircle className="mr-4" /> Previous
+                        <HiOutlineArrowLeftCircle className="mr-2 md:mr-4" /> Previous
                       </div>
                       <div className="page-navigate">
-                        Next <HiOutlineArrowRightCircle className="ml-4" />
+                        Next <HiOutlineArrowRightCircle className="ml-2 md:ml-4" />
                       </div>
                     </div>
                   </div>
@@ -92,6 +92,16 @@ function ReaderScreen() {
                     </div>
                   </div>
                 </div>
+
+				<ul className="chapters-list-mobile">
+					<li>introduction</li>
+					<li>About author</li>
+					<li>Chapter 1</li>
+					<li>Chapter 2</li>
+					<li>Chapter 3</li>
+					<li>Chapter 4</li>
+					<li>Chapter 5</li>
+				</ul>
 
                 <div className="chapters">
                   <p>Chapters</p>
