@@ -9,7 +9,7 @@ function App() {
   return (
     <ModalProvider>
       <Router>
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col items-stretch justify-between">
           <Navbar/>
           <Routes>
             <Route path="/" element={<Home />} />

@@ -1,18 +1,20 @@
 .hero {
   background-image: url("../../images//hero-bg.svg");
-  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  padding: 5% 0;
 }
 
 .hero-display {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 0 5rem;
 }
 
 .hero-text {
   padding: 12.9rem 0;
-  max-width: 52.6rem;
+  width: 50vw;
 }
 
 .hero-header {
@@ -37,10 +39,9 @@
 }
 
 .hero-video {
-  margin-top: 10.8rem;
-  margin-bottom: 12.17rem;
   position: relative;
-  width: 100%;
+  width: 50vw;
+  height: 43.8rem;
   overflow: hidden;
   border: 16px solid #68742c;
   border-radius: 50px;
@@ -57,9 +58,9 @@
   border-radius: 3.47rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .hero {
-    background-position: center;
+    background-position: top;
   }
 
   .hero-display {
@@ -67,7 +68,7 @@
     padding: 15.7rem 0;
   }
   .hero-text {
-    max-width: 52.6rem;
+    width: 100%;
     padding: 0;
   }
 
@@ -98,6 +99,7 @@
     margin-top: 6.22rem;
     border-radius:8px;
     height: 22.6rem;
+    width: 100%;
   }
 
   .video-player{

@@ -12,12 +12,9 @@
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   position: absolute;
-  overflow: hidden;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 100%;
-  width: 799px;
 }
 
 .close-modal {
@@ -27,7 +24,6 @@
 }
 
 .close-icon {
-  font-weight: 100;
   font-size: 40px;
   color: black;
 }
@@ -65,4 +61,26 @@
 
 .modal-text strong {
   text-decoration: underline;
+}
+
+@media (max-width: 800px){
+  .modal {
+    margin: 0 1.6rem;
+  }
+  .close-icon {
+    font-size: 19px;
+  }
+
+  .modal-title {
+    font-size: 16px;
+  }
+
+  .input-field{
+    width: 5.2rem;
+    height: 5.2rem;
+  }
+
+  .modal-text {
+    font-size: 1.2rem;
+  }
 }
