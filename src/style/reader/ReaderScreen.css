@@ -17,7 +17,7 @@
     color: black;
 }
 
-.reader-chapter{
+.reader-page{
     padding: 4.8rem 5.2rem;
     display: flex;
     flex-direction: column;
@@ -25,7 +25,7 @@
     align-items: center;
 }
 
-.reader-chapter h2{
+.reader-page h2{
     text-align: center;
     border: 1px solid black;
     padding: .8rem 1.6rem;
@@ -34,7 +34,7 @@
     margin-bottom: 1.4rem;
 }
 
-.reader-chapter p{
+.reader-page p{
     font-size: 1.4rem;
     padding: .8rem;
     opacity: 0.6;
@@ -43,7 +43,7 @@
 .navigate-page{
     display: flex;
     justify-content: space-between;
-    padding: 2.9rem;
+    padding: 2.9rem ;
     font-size: 1.6rem;
 }
 
@@ -60,7 +60,6 @@
 }
 
 .author-background{
-    width: 50.5rem;
     background-image: url('../../images/UserBackground.svg');
     background-size: cover;
     border-radius: 2.4rem;
@@ -90,6 +89,7 @@
 }
 
 .chapters{
+    width: 30vw;
     padding: 2.4rem;
     background-color: #C0A427;
     margin-top: 1.6rem;
@@ -119,4 +119,45 @@ ul li:hover{
     color: #68742C;
     opacity: 1;
     background-color: #FBFBF6;
+}
+
+@media (max-width: 800px){
+    #reader-header{
+        font-size: 1.4rem;
+        margin: 0 1.6rem;
+    }
+
+    
+    .reader-screen{
+        margin: 2.4rem 1.6rem 4.8rem ;
+        overflow-x: hidden;
+         width: 95%;
+
+    }
+
+    .reader-page{
+        padding: 2.4rem .8rem;
+    }
+    
+    .reader-page h2{
+        padding: .45rem .91rem;
+        font-size: 1.2rem;
+        margin-bottom: 1.6rem;
+    }
+
+    .reader-page p{
+        font-size: 1.2rem;
+
+    }
+
+    .navigate-page div{
+        font-size: 1.2rem;
+    }
+    .page{
+        font-size: 1.2rem;
+    }
+
+    .author-background, .chapters, .chapters-list{
+        display: none;
+    }
 }

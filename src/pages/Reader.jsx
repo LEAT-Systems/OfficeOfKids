@@ -10,7 +10,7 @@ function Reader() {
 			<div className="container mx-auto">
 				<div className="reader-header">
 					<Link to='/' className='go-back'>
-						<HiOutlineArrowLeftCircle className='ml-2' /> Back
+						<HiOutlineArrowLeftCircle className='mr-2' /> Back
 					</Link>
 				</div>
 

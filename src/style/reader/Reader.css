@@ -1,20 +1,31 @@
-.reader-header{
-	background-image: url('../../images//reader-header-bg.svg');
-	background-size: cover;
-	margin-top: 48px;
-	margin-bottom:48px;
-	padding:48px 28px;
-	border-radius: 24px;
+.reader-header {
+  background-image: url("../../images//reader-header-bg.svg");
+  background-size: cover;
+  margin: 4.8rem 0;
+  padding: 4.8rem 2.8rem;
+  border-radius: 2.4rem;
 }
 
-.go-back{
-	width: 101px;
-	background-color: rgba(0, 0, 0, 0.37);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 0 8px;
-	font-size: 16px;
-	padding: 12px 16px;
-	border-radius: 200px;
+.go-back {
+  width: 10.1rem;
+  background-color: rgba(0, 0, 0, 0.37);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  padding: 1.2rem 1.6rem;
+  border-radius: 20rem;
+}
+
+@media (max-width: 800px) {
+  .reader-header {
+    padding: 1.7rem 1.1rem;
+    margin: 4.8rem 1.6rem;
+  }
+
+  .go-back {
+	  width: 7.45rem;
+    font-size: 1.4rem;
+	padding: .4rem .8rem;
+  }
 }
