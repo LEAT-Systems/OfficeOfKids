@@ -1,4 +1,4 @@
-.modal-container {
+/* .modal-container {
   background-color: rgba(0, 0, 0, 0.53);
   position: fixed;
   top: 0;
@@ -45,7 +45,9 @@
   width: 106px;
   height: 106px;
   color: #68742c;
-  font-size: 24px;
+  font-size: 64px;
+  padding: .8rem;
+  text-align: center;
 }
 
 .modal-text {
@@ -61,7 +63,7 @@
 
 .modal-text strong {
   text-decoration: underline;
-}
+} */
 
 @media (max-width: 800px){
   .modal {

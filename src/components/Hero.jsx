@@ -9,8 +9,8 @@ function Hero() {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    showModal()
-    // navigate('/reader');
+    // showModal()
+    navigate('/reader');
   };
 
   return (

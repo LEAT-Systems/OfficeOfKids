@@ -8,6 +8,8 @@ function Modal() {
 
 	const [pin, setPin] = useState([])
 
+	const maxLength = 1
+
 	const handleInput = (e) => {
 		const newPin = e.target.value
 		setPin(newPin)
@@ -22,8 +24,7 @@ function Modal() {
 				<div className='modal-group'>
 					<h2 className="modal-title">Enter an access pin to read the full story</h2>
 					<div className="flex gap-x-4 mt-[24px]">
-						<input type="text" className='input-field' value={pin} onChange={handleInput} />
-						<input type="text" className='input-field' value={pin} onChange={handleInput} />
+						<input type="text" className='input-field' value={pin} onChange={handleInput} maxLength={maxLength}/>
 						<input type="text" className='input-field' value={pin} onChange={handleInput} />
 						<input type="text" className='input-field' value={pin} onChange={handleInput} />
 						<input type="text" className='input-field' value={pin} onChange={handleInput} />
